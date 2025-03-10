@@ -1,0 +1,41 @@
+package com.example.simactivation.dto;
+
+public class SimQueryResponse {
+    private String iccid;
+    private String customerEmail;
+    private boolean active;
+    
+    public SimQueryResponse() {
+    }
+    
+    public SimQueryResponse(String iccid, String customerEmail, boolean active) {
+        this.iccid = iccid;
+        this.customerEmail = customerEmail;
+        this.active = active;
+    }
+    
+    // Getters and setters
+    public String getIccid() {
+        return iccid;
+    }
+    
+    public void setIccid(String iccid) {
+        this.iccid = iccid;
+    }
+    
+    public String getCustomerEmail() {
+        return customerEmail;
+    }
+    
+    public void setCustomerEmail(String customerEmail) {
+        this.customerEmail = customerEmail;
+    }
+    
+    public boolean isActive() {
+        return active;
+    }
+    
+    public void setActive(boolean active) {
+        this.active = active;
+    }
+}
